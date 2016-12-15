@@ -49,11 +49,11 @@ public class NewsFragment extends BaseFragent {
         recyclerView.setAdapter(adapter = new NewsAdapter(getActivity()));
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         //添加边框
-        SpaceDecoration itemDecoration = new SpaceDecoration((int) PixUtil.convertDpToPixel(8, getContext()));
-        itemDecoration.setPaddingEdgeSide(true);
-        itemDecoration.setPaddingStart(true);
-        itemDecoration.setPaddingHeaderFooter(false);
-        recyclerView.addItemDecoration(itemDecoration);
+//        SpaceDecoration itemDecoration = new SpaceDecoration((int) PixUtil.convertDpToPixel(8, getContext()));
+//        itemDecoration.setPaddingEdgeSide(true);
+//        itemDecoration.setPaddingStart(true);
+//        itemDecoration.setPaddingHeaderFooter(false);
+//        recyclerView.addItemDecoration(itemDecoration);
 
         //加载更多
         adapter.setMore(R.layout.view_more, new RecyclerArrayAdapter.OnMoreListener() {
